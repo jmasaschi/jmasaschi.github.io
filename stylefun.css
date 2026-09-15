@@ -1,3 +1,11 @@
+#changeable {
+    height: 30px;
+}
+
+#changeButton {
+    margin-top: 10px;
+}
+
 .bluechange {
     color: blue;
     font-size: 20px;
