@@ -3,3 +3,21 @@
     font-size: 20px;
     font-family: Arial, sans-serif;
 }
+
+.redchange {
+    color: red;
+    font-size: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.greenchange {
+    color: green;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.default {
+    color: black;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
