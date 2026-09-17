@@ -1,7 +1,12 @@
-const styles = ["bluechange", "redchange", "greenchange", "default"];
+const revealItems = document.querySelectorAll(".reveal");
 
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
 
-document.getElementById("changeButton").addEventListener("click", function() {
-    let selectedStyle = styles[Math.floor(Math.random() * styles.length)];
-    document.getElementById("changeable").className = selectedStyle;
-});
+revealItems.forEach((item) => revealObserver.observe(item));
